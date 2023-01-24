@@ -1,0 +1,1752 @@
+
+
+html, body{
+	margin: 0; 
+	padding: 0;
+	background: black;
+	scroll-behavior: smooth;
+	font-family: 'Roboto', sans-serif;
+	text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+}
+
+h1{
+	font-weight: normal;
+	font-size: 42px;
+}
+
+h2{
+	font-weight: normal;
+	font-size: 32px;
+}
+
+h3{
+	font-weight: normal;
+	font-size: 25px;
+}
+
+p{
+	font-size: 20px;
+}
+
+a{
+	font-size: 20px;
+}
+
+.netBackground{
+	height: 100vh;
+	width: 100%;
+	opacity: 0.5;
+	position: fixed;
+}
+
+.wrapWorkstationBackground{
+	width: 100%;
+	height: 3000px;
+	position: absolute;
+}
+
+.workstationBackground{
+	height: 100vh;
+	width: 100%;
+	position: sticky;
+	top: 0;
+	background-position: center;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+@-webkit-keyframes slideDown {
+	0% {
+		transform: translateY(-61px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+header{
+	width: 100%;
+	height: 60px;
+	background: green;
+	border-bottom: 1px solid white;
+	position: fixed;
+	z-index: 1;
+	-webkit-animation: slideDown 2.5s forwards;
+	-moz-animation: slideDown 2.5s forwards;
+	animation-delay: slideDown 2.5s forwards;
+}
+
+.buttonsResponsive{
+	display: none;
+}
+
+.holdBtnWelcomeTop{
+	height: auto;
+	display: inline-block;
+	width: auto;
+	margin: 0px;
+	margin-left: 2%;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;
+}
+
+.btnWelcomeTop{
+	display: inline-block;
+	margin: 0 0px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 9px;
+	color: white;
+	text-decoration: none;
+}
+
+.triangle{
+	-webkit-text-stroke: 1px #9fbbf3;
+	width: auto;
+	color: transparent;
+	font-size: 20px;
+	padding-top: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-bottom: 1px;
+	border-radius: 5px;
+	margin-right: 20px;
+}
+
+.buttons{
+	text-align: center;
+	float: right;
+	margin-right: 2%;
+	height: 62px;
+}
+
+.btnAboutMe, .btnSkills, .btnProjects, .btnEducation{
+	display: inline-block;
+	margin: 0 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 9px;
+	color: white;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;
+}
+
+.btnContact{
+	display: inline-block;
+	margin-left: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 9px;
+	color: white;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;
+}
+
+.holdBtnWelcomeTop:hover{
+	color: #9fbbf3;
+	transition-duration: 1s;
+	position: relative;
+	height: 60px;
+	background: black;
+	border-bottom: 1px solid #9fbbf3;
+	border-right: 1px solid #9fbbf3;
+	border-left: 1px solid #9fbbf3;
+}
+
+.btnWelcomeTop:hover{
+	color: #9fbbf3;
+	transition-duration: 1s;
+}
+
+.btnAboutMe:hover, .btnSkills:hover, .btnProjects:hover, .btnEducation:hover, .btnContact:hover{
+	color: #9fbbf3;
+	transition-duration: 1s;
+	background: black;
+	border-bottom: 1px solid #9fbbf3;
+	border-right: 1px solid #9fbbf3;
+	border-left: 1px solid #9fbbf3;
+	height: 31px;
+}
+
+.introContainer{
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+}
+
+.centerNameMission{
+	width: 100%;
+	height: auto;
+}
+
+.nametxtContainer{
+	height: auto;
+	width: 445px;
+	border: 1px solid white;
+	background: rgba(0, 0, 0, 0.7);
+	margin: 0px auto;
+	margin-top: 0px;
+	margin-bottom: 17px;
+	-webkit-animation: slideInLeft 2.5s forwards;
+	-moz-animation: slideInLeft 2.5s forwards;
+	animation: slideInLeft 2.5s forwards;
+	border-radius: 5px;
+}
+
+@-webkit-keyframes slideInLeft {
+	0% {
+		transform: translateX(-900px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@-moz-keyframes slideInLeft {
+	0% {
+		transform: translateX(-900px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@keyframes slideInLeft {
+	0% {
+		transform: translateX(-900px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.missiontxtContainer{
+	height: auto;
+	width: 558px;
+	border: 1px solid white;
+	background: rgba(0, 0, 0, 0.7);
+	margin: 0px auto;
+	-webkit-animation: slideInRight 2.5s forwards;
+	-moz-animation: slideInRight 2.5s forwards;
+	animation: slideInRight 2.5s forwards;
+	border-radius: 5px;
+}
+
+@-webkit-keyframes slideInRight {
+	0% {
+		transform: translateX(900px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@-moz-keyframes slideInRight {
+	0% {
+		transform: translateX(900px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+@keyframes slideInRight {
+	0% {
+		transform: translateX(900px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.nameTxtDesktop, .missionTxt{
+	color: white;
+	padding: 24px;
+	text-align: center;
+	margin: 0;
+}
+
+#nameTxtMobile{
+	display: none;
+}
+
+.typewrite{
+	color: white;
+	margin: 0;
+}
+
+#goToAboutMe, #goToSkills, #goToProjects, #goToEducation, #goToContact{
+	width: 100%;
+	height: 60px;
+	position: absolute;
+	bottom: 1px;
+}
+
+/*SECTIONS TO HOLD BACKGROUND PICTURES*/
+
+.wrapSectionBackgrounds{/*Wrap All Background Sections*/
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 100vh;
+}
+
+.sectionAboutMeBackground, .sectionSkillsBackground, .sectionProjectsBackground, .sectionEducationBackground, .sectionContactMeBackground{
+	width: 100%;
+}
+
+/*DISPLAY BACKGROUND PICTURE*/
+.sectionBackground{
+	width: 100%;
+	height: 100vh;
+	position: sticky;
+	top: 0;
+	background-position: center;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/*SECTIONS THAT WILL HOLD CONTENT*/
+
+.sectionWrapper{/*Wrap All Content Sections*/
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 100vh;
+}
+
+.sectionAboutMe{
+	height: auto;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	position: relative;
+}
+
+.sectionSkills, .sectionEducation, .sectionContact{
+	height: auto;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.35);
+	position: relative;
+}
+
+.sectionProjects{
+	height: auto;
+	width: 100%;
+	position: relative;
+}
+
+/*ADD CONTENT TO SECTIONS*/
+
+.headerContainer{
+	width: 70%;
+	height: 50px;
+	margin: 0px auto;
+	position: relative;
+	top: 100px;
+}
+
+.headerContainer .sectionHeading{
+	text-align: center;
+	color: white;
+    text-transform: uppercase;
+	margin-top: 0px;
+	margin-bottom: 0px;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.headerContainer .sectionHeading:after,.headerContainer .sectionHeading:before{
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #5F94D9;
+    border-top: 1px solid #5F94D9;
+    height: 5px;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.sectionHeadingEducation{
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0px;
+	font-family: 'Fredericka the Great';
+	line-height: 25px;
+	color: white;
+}
+
+.sectionHeadingProjects{
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	margin: 0px;
+	line-height: 25px;
+	color: white;
+}
+
+.linesLeft, .linesRight{
+	width: 50%;
+}
+
+.lineTop{
+	width: 100%;
+	height: 1px;
+	margin-bottom: 5px;
+	background-position: center;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.lineBottom{
+	width: 100%;
+	height: 1px;
+	margin-top: 5px;
+	background-position: center;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/*About me*/
+.aboutMe{
+	width: 95%;
+	height: auto;
+	padding-bottom: 143px;
+	margin-top: 177px;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+.txtAboutMe{
+	color: white;
+    line-height: 1.65;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 32px;
+	margin-bottom: 0px;
+}
+
+/*Skills*/
+.mySkills{
+	width: 95%;
+	height: auto;
+	padding-bottom: 150px;
+	margin-top: 177px;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+.skillType{
+	color: white;
+	margin: 0px;
+	text-align: center;
+	margin-bottom: 26px;
+	margin-top: 26px;
+}
+
+#sectionHeadingSkillsMobile{
+	display: none;
+}
+
+.operatingSystems, .software, .web, .tools{
+	display: flex;
+	flex-flow: row wrap;
+	width: 90%;
+	margin: 0px auto;
+	justify-content: space-around;
+	padding-top: 64px;
+	background: rgba(0, 0, 0, 0.5);
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	border-radius: 5px;
+}
+
+.concepts{
+	height: auto;
+	width: 90%;
+	margin: 0px auto;
+	background: rgba(0, 0, 0, 0.5);
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	border-radius: 5px;
+}
+
+.concept{
+	color: white;
+	text-align: center;
+	list-style-type: none;
+	cursor: default;
+	margin: 58px;
+	transition-duration: 0.5s;
+	line-height: 1.65;
+}
+
+.concept:hover{
+	font-size: 25px;
+}
+
+.skill{
+	width: 125px;
+	height: auto;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 64px;
+}
+
+.skill:hover{
+	width: 145px;
+}
+
+.skillPic{
+	width: 100%;
+	height: 125px;
+	position: relative;
+	top: 20px;
+	margin: 0px auto;
+	transition-duration: 0.5s;
+	background-position: center;
+    background-size: 100% 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.skill:hover .skillPic{
+	width: 100%;
+	height: 145px;
+	position: relative;
+	top: 0px;
+	transform: rotate(360deg);
+}
+
+.txtSkill{
+	color: white;
+	text-align: center;
+	margin: 0;
+	margin-top: 35px;
+	transition-duration: 0.5s;
+	line-height: 1.65;
+}
+
+.skill:hover .txtSkill{
+	font-size: 25px;
+	margin-top: 25px;
+}
+
+/*Projects*/
+.holdInstruction{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	height: auto;
+	width: 100%;
+	background: black;
+	position: sticky;
+	bottom: 0;
+}
+
+.positionInstructions{
+	width: auto;
+	display: inline-block;
+	height: 100%;
+}
+
+.imgInstruction{
+	height: 30px;
+	width: 25px;
+	margin: 10px;
+	margin-right: 0px;
+	display: inline-block;
+	float: left;
+}
+
+.txtInstructionDesktopTablet{
+	color: white;
+	margin: 15px;
+	display: inline-block;
+	float: left;
+}
+
+.txtInstructionMobile{
+	display: none;
+}
+
+.myProjects{
+	width: 95%;
+	height: auto;
+	padding-bottom: 86px;
+	margin-top: 177px;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+.projectType{
+	color: white;
+	margin: 0px;
+	text-align: center;
+	margin-bottom: 26px;
+	margin-top: 0px;
+}
+
+.softwareProjects, .webProjects, .GraphicProjects{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding-top: 32px; 
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+	padding-bottom: 0px;
+}
+
+.flip-box{/*3D effect*/
+	background-color: transparent;
+	width: 44.75%;
+	height: 446px;
+	border: 1px solid white;
+	perspective: 1000px; 
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	margin-bottom: 64px;
+	border-radius: 5px;
+}
+
+.flip-box-inner{/*This container is needed to position the front and back side*/
+	position: relative;
+	width: 100%;
+	height: 305px; 
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner{/*Do a horizontal flip when the mouse moves over the flip box container*/
+	transform: rotateY(180deg); 
+}
+
+.flip-box-front, .flip-box-back{/*Position the front and back side Safari*/
+	position: absolute;
+	width: 100%;
+	height: 100%; 
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.flip-box-front{/*Style the front side (fallback if image is missing)*/
+	color: black; 
+}
+
+.flip-box-back{/*Style the back side*/
+	color: white; 
+	transform: rotateY(180deg);
+}
+
+.holdProjectsName{
+	height: auto;
+	width: 100%;
+	margin: 0px auto;
+	background: rgba(0, 0, 0, 0.6);
+	border-bottom: 1px solid white;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px; 
+}
+
+.txtProjectName{
+	color: white;
+	font-size: 21.5px;
+	text-align: center;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding: 12px;
+}
+
+.holdProjectDescription{
+	height: 339px;
+	width: 100%;
+	margin: 0px auto;
+	background: rgba(34, 89, 130, 0.6);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.txtProjectDescription{
+	color: white;
+    line-height: 1.65;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.holdProjectsTechnologies{
+	height: 80px;
+	width: 100%;
+	margin-top: -4px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	background: rgba(0, 0, 0, 0.6);
+	border-top: 1px solid white;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	align-items: center;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px; 
+}
+
+.txtTechnologiesUsed{
+	color: white;
+	margin-top: 8px;
+	margin-bottom: 0px;
+	margin-left: 3%;
+}
+
+.imgTechnologiesUsed{
+	height: 30px;
+	width: 30px;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 10px;
+}
+
+.txtTechConceptsUsed{
+	background: rgba(0, 0, 0, 0.5); 
+	padding: 3px 7px; 
+	border-radius: 5px; 
+	color: white; 
+	margin-top: 10px; 
+	margin-bottom: 0px; 
+	margin-left: 3%; 
+	margin-right: 3%;
+}
+
+.holdProjectButtons{
+	margin: 0px auto;
+	height: auto;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	border-top: 1px solid white;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px; 
+}
+
+.btnProjectsInfo{
+	display: inline-block;
+	margin: 0px;
+	margin-right: 7.5px;
+	margin-left: 7.5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px 15px;
+	border-radius: 5px;
+	border: 1px solid white;
+	color: white;
+	text-decoration: none;
+	text-align: left;
+	transition-duration: 1s;
+}
+
+.btnProjectsInfo:hover{
+	background: rgba(34, 89, 130, 0.6);
+}
+
+.imgInfoType{
+	display: inline-block;
+	float: left;
+	height: 24px;
+	width: 24px;
+	margin-right: 5px;
+}
+
+/*Education*/
+.myEducation{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	width: 90%;
+	height: auto;
+	padding-bottom: 86px;
+	margin-top: 177px;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}
+
+.education{
+	width: 45%;
+	height: auto;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	margin-bottom: 64px;
+	font-family: 'Fredericka the Great';
+	color: white;
+}
+
+.fvtcLogo{
+	width: 170px;
+	height: 130px;
+	margin: 0px auto;
+	background-position: center;
+    background-size: 100% 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+	
+}
+
+.udemyLogo{
+	width: 95px;
+	height: 160px;
+	margin: 0px auto;
+	background-position: center;
+    background-size: 100% 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.txtInstitution{
+	display: inline-block;
+	float: left;
+	width: 100%;
+	margin: 0px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.underline{
+	width: 100%;
+	height: 1px;
+	margin-top: 20px;
+	background: url('../img/education-icons/Chalk/whiteChalkLine.png');
+	background-position: center;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.programDescription{
+	height: auto;
+	width: 100%;
+	line-height: 1.65;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: inline-block;
+	float: left;
+}
+
+.txtProgramTitle{
+	margin: 0px;
+	padding-bottom: 20px;
+}
+
+.txtProgramDescription{
+	margin: 0px;
+}
+
+.txtProgramDetails{
+	height: auto;
+	width: 100%;
+	display: inline-block;
+	float: left;
+	line-height: 1.65;
+}
+
+.check{
+	height: 35px;
+	width: 38px;
+	background: url('../img/education-icons/Chalk/checkMarkChalk.png');
+    background-size: 100% 100%;
+	display: inline-block;
+	float: left:
+}
+
+.awardType{
+	padding-bottom: 20px;  
+	display: inline-block;
+	margin: 0px;
+}
+
+.detail{
+	margin: 0px;
+	list-style: none;
+	text-align: left;
+}
+
+/*Contact me*/
+.ContactMe{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	width: 95%;
+	height: auto;
+	padding-bottom: 86px;
+	margin-top: 177px;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+@keyframes wobble-vertical {
+	16.65% {
+		transform: translateY(17px);
+	}
+	33.3% {
+		transform: translateY(-60px);
+	}
+	49.95% {
+		transform: translateY(10px);
+	}
+	66.6% {
+		transform: translateY(-30px);
+	}
+	83.25% {
+		transform: translateY(5px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.contactContainer{
+	width: 297px;
+	height: auto;
+	background: rgba(0, 0, 0, 0.7);
+	border: 1px solid white;
+	border-radius: 5px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 64px;
+}
+
+.contactContainer:hover .emailLogo{
+	animation-name: wobble-vertical;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	background: url('../img/contact-icons/emailHover.png');
+	background-position: center;
+    background-size: 100% 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.contactContainer:hover .linkedInLogo{
+	animation-name: wobble-vertical;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	background: url('../img/contact-icons/linkedInHover.png');
+	background-position: center;
+    background-size: 100% 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.contactContainer:hover .githubLogo{
+	animation-name: wobble-vertical;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	background: url('../img/contact-icons/githubHover.png');
+	background-position: center;
+    background-size: 100% 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.emailLogo{
+	width: 150px;
+	height: 150px;
+	margin: 0px auto;
+	margin-top: 75px;
+	background: url('../img/contact-icons/email.png');
+	background-position: center;
+    background-size: 100% 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+	transition-duration: 1.5s;
+}
+
+.linkedInLogo{
+	width: 150px;
+	height: 150px;
+	margin: 0px auto;
+	margin-top: 75px;
+	background: url('../img/contact-icons/linkedIn.png');
+	background-position: center;
+    background-size: 100% 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+	transition-duration: 1.5s;
+}
+
+.githubLogo{
+	width: 150px;
+	height: 150px;
+	margin: 0px auto;
+	margin-top: 75px;
+	background: url('../img/contact-icons/github.png');
+	background-position: center;
+    background-size: 100% 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+	transition-duration: 1.5s;
+}
+
+.txtMethod{
+	text-align: center;
+	color: white;
+	margin-top: 18px;
+}
+
+.link{
+	text-align: center;
+	padding: 6px;
+	margin-bottom: 60px;
+}
+
+.breakText{
+	width: 285px;
+	word-wrap: break-word;
+	display: inline-block;
+}
+
+
+
+/*FireFox all versions*/
+@-moz-document url-prefix(){
+	
+	.link{
+	}
+	
+	.netBackground{
+		background: url('../img/backgrounds/vanta-net-background-still.JPG');
+		background-position: center;
+		background-size: cover;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+	
+	.flip-box-inner{
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	}
+	
+}
+
+
+
+@media only screen and (max-width: 1188px){
+	
+	.flip-box{
+		width: 52.5%;
+	}
+	
+	.education{
+		width: 52.5%;
+	}
+	
+}
+
+
+
+@media only screen and (max-width: 1026px){
+	
+	.menuIcon{
+		height: 60px;
+		margin: 0 2%;
+		float: right;
+		border-right: 1px solid transparent;
+		border-left: 1px solid transparent;
+		border-bottom: 1px solid transparent;
+	}
+	
+	.menuIcon:hover{
+		background: black;
+		border-right: 1px solid #9fbbf3;
+		border-left: 1px solid #9fbbf3;
+		border-bottom: 1px solid #9fbbf3;
+		transition-duration: 1s;
+	}
+	
+	.btn{
+		position: relative;
+		top: 50%;
+		left: 50%;
+		margin-top: 2px;
+		padding-right: 20px;
+		padding-left: 20px;
+		transform: translate(-50%, -50%);
+		width: 47px;
+		cursor: pointer;
+	}
+	
+	.btn:hover .line{
+		background: #9fbbf3;
+		transition-duration: 1s;
+	}
+
+	.line{
+		display: block;
+		width: 100%;
+		border-radius: 1.5px;
+		height: 2px;
+		background: white;
+		transition: all .3s;
+		position: relative;
+	}
+
+	.line + .line{
+		margin-top: 11px;
+	}
+
+	.active .line:nth-child(1){
+		animation: ease .7s top forwards;
+	}
+
+	.not-active .line:nth-child(1){
+		animation: ease .7s top-2 forwards;
+	}
+
+	.active .line:nth-child(2){
+		animation: ease .7s scaled forwards;
+	}
+
+	.not-active .line:nth-child(2){
+		animation: ease .7s scaled-2 forwards;
+	}
+
+	.active .line:nth-child(3){
+		animation: ease .7s bottom forwards;
+	}
+
+	.not-active .line:nth-child(3){
+		animation: ease .7s bottom-2 forwards;
+	}
+
+	@keyframes top{
+		0%{
+			top: 0;
+			transform: rotate(0);
+		}
+		50%{
+			top: 13px;
+			transform: rotate(0);
+		}
+		100%{
+			top: 13px;
+			transform: rotate(30deg);
+		}
+	}
+
+	@keyframes top-2{
+		0%{
+			top: 13px;
+			transform: rotate(30deg);
+		}
+		50%{
+			top: 13px;
+			transform: rotate(0deg);
+		}
+		100%{
+			top: 0;
+			transform: rotate(0deg);
+		}
+	}
+
+	@keyframes bottom{
+		0%{
+			bottom: 0;
+			transform: rotate(0);
+		}
+		50%{
+			bottom: 13px;
+			transform: rotate(0);
+		}
+		100%{
+			bottom: 13px;
+			transform: rotate(150deg);
+		}
+	}
+
+	@keyframes bottom-2{
+		0%{
+			bottom: 13px;
+			transform: rotate(150deg);
+		}
+		50%{
+			bottom: 13px;
+			transform: rotate(0);
+		}
+		100%{
+			bottom: 0;
+			transform: rotate(0);
+		}
+	}
+
+	@keyframes scaled{
+		50%{
+			transform: scale(0);
+		}
+		100%{
+			transform: scale(0);
+		}
+	}
+
+	@keyframes scaled-2{
+		0%{
+			transform: scale(0);
+		}
+		50%{
+			transform: scale(0);
+		}
+		100%{
+			transform: scale(1);
+		}
+	}
+	
+	.buttonsResponsive{
+		display: inline-block;
+		z-index: 1;
+		margin-top: 1px;
+		width: 100%;
+		height: 279px;
+		position: fixed;
+		top: 59px;
+		border-bottom: 1px solid white;
+		font-size: 0px;
+	}
+	
+	.buttonsBackground{
+		width: 100%;
+		height: 278px;
+		background: black;
+		position: absolute;
+		z-index: -1;
+		margin-top: 1px;
+	}
+	
+	.buttonResponsive{
+		display: inline-block;
+		width: 100%;
+		margin: 0px auto;
+		background: transparent;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		text-align: center;
+		color: white;
+		font-size: 20px;
+		text-decoration: none;
+		transition-duration: 1s;
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid transparent;
+	}
+	
+	.buttonResponsive:hover{
+		color: #9fbbf3;
+		background: transparent;
+		border-top: 1px solid #9fbbf3;
+		border-bottom: 1px solid #9fbbf3;
+	}
+	
+	.buttons{
+		display: none;
+	}
+	
+	.flip-box{
+		width: 62.5%;
+	}
+	
+	.education{
+		width: 62.5%;
+	}
+	
+	.skill{
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+	
+}
+
+
+
+@media only screen and (max-width: 875px){
+	
+	.flip-box{
+		width: 72.5%;
+	}
+	
+	.education{
+		width: 72.5%;
+	}
+	
+	.skill{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+}
+
+
+
+@media only screen and (max-width: 766px){
+	
+	.flip-box{
+		width: 82.5%;
+	}
+	
+	.education{
+		width: 82.5%;
+	}
+	
+}
+
+
+
+@media only screen and (max-width: 683px){
+	
+	.nametxtContainer{
+		width: 47%;
+	}
+	
+	.missiontxtContainer{
+		width: 92%;
+	}
+	
+	.nameTxtDesktop{
+		display: none;
+	}
+	
+	#nameTxtMobile{
+		display: inherit;
+		color: white;
+		padding: 16px;
+		text-align: center;
+		margin: 0;
+	}
+	
+	.missionTxt{
+		padding: 16px;
+	}
+	
+	#sectionHeadingSkillsDesktop{
+		display: none;
+	}
+	
+	.headerContainer #sectionHeadingSkillsMobile{
+		text-align: center;
+		color: white;
+		text-transform: uppercase;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		display: grid;
+		grid-template-columns: 1fr max-content 1fr;
+		grid-template-rows: 27px 0;
+		grid-gap: 20px;
+		align-items: center;
+	}
+
+	.headerContainer #sectionHeadingSkillsMobile:after,.headerContainer #sectionHeadingSkillsMobile:before{
+		content: " ";
+		display: block;
+		border-bottom: 1px solid #5F94D9;
+		border-top: 1px solid #5F94D9;
+		height: 5px;
+	}
+	
+	.flip-box{
+		width: 100%;
+	}
+	
+	.education{
+		width: 100%;
+	}
+	
+	.skill{
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+	
+}
+
+
+
+@media only screen and (max-width: 600px){
+	
+	.nametxtContainer{
+		width: 56%;
+	}
+	
+	.missiontxtContainer{
+		width: 95%;
+	}
+	
+	.headerContainer{
+		width: 80%;
+		height: 50px;
+		margin: 0px auto;
+		position: relative;
+		top: 100px;
+	}
+	
+	.skill{
+		width: 100px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.skill:hover{
+		width: 120px;
+	}
+
+	.skillPic{
+		height: 100px;
+	}
+
+	.skill:hover .skillPic{
+		height: 120px;
+	}
+	
+	.flip-box{
+		height: 446px;
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	
+	.txtInstructionDesktopTablet{
+		display: none;
+	}
+	
+	.imgInstruction{
+		display: none;
+	}
+	
+	.txtInstructionMobile{
+		display: initial;
+		color: white;
+		margin: 15px;
+		display: inline-block;
+		float: left;
+		text-align: center;
+	}
+	
+	.txtAboutMe{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	.operatingSystems, .software, .web, .tools{
+		width: 100%;
+	}
+	
+	.concepts{
+		width: 100%;
+	}
+	
+	.softwareProjects, .webProjects, .GraphicProjects{
+		padding-right: 0%;
+		padding-left: 0%;
+	}
+	
+	.myEducation{
+		width: 95%;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	.education{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 483px){
+	
+	.nametxtContainer{
+		width: 68%;
+	}
+	
+	.headerContainer{
+		width: 85%;
+	}
+	
+	.skill{
+		width: 97px;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.skill:hover{
+		width: 117px;
+	}
+
+	.skillPic{
+		height: 97px;
+	}
+
+	.skill:hover .skillPic{
+		height: 117px;
+	}
+	
+	.flip-box-inner{
+		height: 249px;
+	}
+	
+	.txtAboutMe, .concept, .txtSkill, .txtProjectDescription, .programDescription, .txtProgramDetails{
+		line-height: 1.425;
+	}
+	
+	.holdProjectsTechnologies{
+		height: 136px; 
+	}
+	
+	.txtTechnologiesUsed{
+		width: 100%;
+		margin-top: 15px;
+		margin-right: 3%;
+	}
+
+	.imgTechnologiesUsed{
+		margin-top: 15px;
+	}
+	
+	.txtTechConceptsUsed{
+		margin-top: 15.5px;
+	}
+	
+	.projectTechPadding{
+		height: 0px;
+		width: 100%;
+		margin: 0px;
+	}
+	
+}
+
+
+
+@media only screen and (max-width: 400px){
+	
+	.nametxtContainer{
+		width: 269px;
+	}
+	
+	.missiontxtContainer{
+		width: 95%;
+	}
+	
+	.headerContainer{
+		width: 95%;
+		height: auto;
+	}
+
+	.headerContainer .sectionHeading{
+		grid-template-columns: none;
+		grid-template-rows: none;
+		grid-gap: none;
+	}
+
+	.headerContainer .sectionHeading:after,.headerContainer .sectionHeading:before{
+		content: none;
+		border-bottom: none;
+		border-top: none;
+		height: 0px;
+	}
+	
+	.headerContainer #sectionHeadingSkillsMobile{
+		grid-template-columns: none;
+		grid-template-rows: none;
+		grid-gap: none;
+	}
+
+	.headerContainer #sectionHeadingSkillsMobile:after,.headerContainer #sectionHeadingSkillsMobile:before{
+		content: none;
+		border-bottom: none;
+		border-top: none;
+		height: 0px;
+	}
+	
+	table{
+		width: 100%;
+		height: auto;
+		border-collapse: initial;
+	}
+
+	.sectionHeadingEducation{
+		padding: initial;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	
+	.linesLeft, .linesRight{
+		width: 0%;
+	}
+
+	.lineTop, .lineBottom{
+		display: none;
+	}
+	
+	.txtAboutMe, .concept, .txtSkill, .txtProjectDescription, .programDescription, .txtProgramDetails{
+		line-height: initial;
+	}
+	
+	.skill{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+	.picturePadding{
+		width: 100%;
+		height: 21px;
+	}
+	
+	.flip-box{
+		border: 0px;
+	}
+	
+	.holdProjectDescription{
+		border-top: 1px solid white;
+		border-right: 1px solid white;						
+		border-left: 1px solid white;
+		transition-duration: 0.5s;
+	}
+	
+	.flip-box:hover .holdProjectDescription{
+		border-top: 0px solid white;
+		border-right: 1px solid white;						
+		border-left: 1px solid white;
+	}
+	
+	.holdProjectButtons{
+		border: 1px solid white;
+		transition-duration: 0.5s;
+	}
+	
+	.flip-box:hover .holdProjectButtons{
+		border-right: 1px solid white;						
+		border-left: 1px solid white;
+		border-bottom: 1px solid white;
+	}
+	
+	.flip-box-inner{
+		height: 205px;
+	}
+	
+	.holdProjectsName{
+		border: 1px solid white;
+	}
+	
+	.projectPic{
+		border: 1px solid white;
+	}
+	
+	.holdProjectsTechnologies{
+		height: 136px; 
+		margin-top: 17px;
+		border: 1px solid white;
+	}
+	
+	.txtProjectDescription{
+		padding-left: 3%;
+		padding-right: 3%;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	
+	.btnProjectsInfo{
+		margin-right: 0px;
+		margin-left: 0px;
+		padding: 5px 4.1px;
+	}
+	
+	.imgInfoType{
+		margin-right: 3px;
+	}
+	
+	.contactContainer{
+		width: 297px;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+	
+}
+
+
+
+@media only screen and (min-width : 5px) 
+and (max-height : 425px) {
+	.nametxtContainer{
+		margin-top: 60px;
+	}
+}
+
+
+
+@media only screen and (min-width : 5px) 
+and (max-height : 375px) {
+	
+	.buttonResponsive{
+		width: 50%;
+		border: 1px solid transparent;
+		margin: 0px;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	
+	.buttonResponsive:hover{
+		border: 1px solid #9fbbf3;
+	}
+	
+	.buttonsResponsive{
+		height: 167px;
+	}
+	
+	.buttonsBackground{
+		height: 166px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
